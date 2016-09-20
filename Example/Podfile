@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PYOpenShare_Example' do
+  pod 'PYOpenShare', :path => '../'
+
+  target 'PYOpenShare_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
