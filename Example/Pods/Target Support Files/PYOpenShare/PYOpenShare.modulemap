@@ -1,0 +1,6 @@
+framework module PYOpenShare {
+  umbrella header "PYOpenShare-umbrella.h"
+
+  export *
+  module * { export * }
+}

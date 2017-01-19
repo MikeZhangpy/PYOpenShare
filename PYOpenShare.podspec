@@ -9,16 +9,11 @@
 Pod::Spec.new do |s|
   s.name             = 'PYOpenShare'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PYOpenShare.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A social module based on Openshare contributing to sharing infomation with kinds of platforms such as Weixin , Weibo , tencent ,etc ,which also contribute to OAuth and Pay '
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    This a social module based on Openshare contributing to sharing infomation with kinds of platforms such as Weixin , Weibo , tencent ,etc ,which also contribute to OAuth and Pay.You can follow this order :
+    Abount specific instructions , you can refer to example.
                        DESC
 
   s.homepage         = 'https://github.com/<GITHUB_USERNAME>/PYOpenShare'
@@ -30,13 +25,19 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'PYOpenShare/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'PYOpenShare' => ['PYOpenShare/Assets/*.png']
-  # }
+  s.default_subspecs = 'Open'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Open' do |ss|
+    ss.dependency 'PYOpenShare/Tool'
+    ss.dependency 'PYOpenShare/View'
+    ss.source_files = 'PYOpenShare/OpenShare/*'
+  end
+
+  s.subspec 'Tool' do |ss|
+    ss.source_files = 'PYOpenShare/OpenShareTool/*'
+  end
+
+  s.subspec 'View' do |ss|
+    ss.source_files = 'PYOpenShare/OpenShareView/*'
+  end
 end

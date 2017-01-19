@@ -1,0 +1,22 @@
+PODS:
+  - PYOpenShare (0.1.0):
+    - PYOpenShare/Open (= 0.1.0)
+  - PYOpenShare/Open (0.1.0):
+    - PYOpenShare/Tool
+    - PYOpenShare/View
+  - PYOpenShare/Tool (0.1.0)
+  - PYOpenShare/View (0.1.0)
+
+DEPENDENCIES:
+  - PYOpenShare (from `../`)
+
+EXTERNAL SOURCES:
+  PYOpenShare:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PYOpenShare: f4ab5b86fa0002ff25c4c832b8392ae6e99c8435
+
+PODFILE CHECKSUM: 18a231424d441797a5ac9cd146368b5801a0c623
+
+COCOAPODS: 1.1.1

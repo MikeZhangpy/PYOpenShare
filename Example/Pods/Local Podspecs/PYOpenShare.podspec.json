@@ -1,0 +1,44 @@
+{
+  "name": "PYOpenShare",
+  "version": "0.1.0",
+  "summary": "A social module based on Openshare contributing to sharing infomation with kinds of platforms such as Weixin , Weibo , tencent ,etc ,which also contribute to OAuth and Pay",
+  "description": "This a social module based on Openshare contributing to sharing infomation with kinds of platforms such as Weixin , Weibo , tencent ,etc ,which also contribute to OAuth and Pay.You can follow this order :\nAbount specific instructions , you can refer to example.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PYOpenShare",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MikeZhangpy": "zhangpy1991@126.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PYOpenShare.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "Open",
+  "subspecs": [
+    {
+      "name": "Open",
+      "dependencies": {
+        "PYOpenShare/Tool": [
+
+        ],
+        "PYOpenShare/View": [
+
+        ]
+      },
+      "source_files": "PYOpenShare/OpenShare/*"
+    },
+    {
+      "name": "Tool",
+      "source_files": "PYOpenShare/OpenShareTool/*"
+    },
+    {
+      "name": "View",
+      "source_files": "PYOpenShare/OpenShareView/*"
+    }
+  ]
+}
